@@ -7,7 +7,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const navLinks = [
-        { name: 'Work', href: '#work' },
+        { name: 'Work', href: '/#work' },
         { name: 'About', href: '/about' },
         { name: 'Contact', href: '/contact' },
     ];
@@ -30,7 +30,7 @@ const Navbar = () => {
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 0.8, ease: "circOut" }}
-                className="fixed w-full p-6 z-100 flex justify-center mix-blend-difference text-white"
+                className="fixed w-full p-6 z-200 flex justify-center mix-blend-difference  text-white"
             >
                 <div className="w-full max-w-7xl flex justify-between items-center">
                     {/* Logo with subtle hover lift */}

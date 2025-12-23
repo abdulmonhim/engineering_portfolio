@@ -10,7 +10,7 @@ const Projects = () => (
         <Reveal>
             <div className="flex justify-between items-end mb-16">
                 <h2 className="text-4xl md:text-6xl font-light font-['Space Grotesk']">Selected Works</h2>
-                <p className="text-gray-500 text-sm hidden md:block">2023 — 2025</p>
+                <p className="text-gray-500 text-sm hidden md:block">2024 — 2025</p>
             </div>
         </Reveal>
 

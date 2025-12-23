@@ -39,7 +39,7 @@ const SkillBadge = ({ icon: Icon, label, level }) => (
 const ExperienceItem = ({ year, role, company, description }) => (
     <div className="relative pl-8 border-l border-white/10 pb-12 last:pb-0 group">
         {/* Timeline Dot */}
-        <div className={`absolute -left-[5px] top-2 w-2.5 h-2.5 bg-[#050505] border border-gray-600 rounded-full group-hover:border-[#0077b6] group-hover:scale-125 transition-all duration-300`} />
+        <div className={`absolute -left-5px top-2 w-2.5 h-2.5 bg-[#050505] border border-gray-600 rounded-full group-hover:border-[#0077b6] group-hover:scale-125 transition-all duration-300`} />
         
         <span className={`text-xs font-mono ${ACCENT} mb-1 block opacity-70`}>{year}</span>
         <h3 className="text-xl font-['Space_Grotesk'] text-white font-light">{role}</h3>
@@ -70,12 +70,12 @@ export default function AboutPage() {
                     <div>
                         <div className="flex items-center gap-2 mb-6">
                             <div className={`w-2 h-2 ${BG_ACCENT} rounded-full animate-pulse`}></div>
-                            <span className="text-xs font-mono uppercase tracking-widest text-gray-400">System Identity: Mech. Engineer</span>
+                            <span className="text-xs font-mono uppercase tracking-widest text-gray-400">Profession: Mechanical Engineer</span>
                         </div>
                         
                         <h1 className="text-5xl md:text-7xl lg:text-8xl font-['Space_Grotesk'] font-light leading-[0.9] tracking-tight mb-8">
                             Meet <br/>
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Abdul Monhim</span>
+                            <span className="text-transparent bg-clip-text bg-linear-to-r from-white to-gray-500">Abdul Monhim</span>
                         </h1>
                         
                         {/* THE BIO FROM YOUR SNIPPET */}
@@ -90,7 +90,7 @@ export default function AboutPage() {
 
                         <div className="flex flex-wrap gap-8 text-xs font-mono text-gray-500">
                             <span className="flex items-center gap-2">
-                                <MapPin size={14} /> ISLAMABAD, PK
+                                <MapPin size={14} /> RAWALPINDI, PK
                             </span>
                             <span className="flex items-center gap-2">
                                 <Briefcase size={14} /> AVAILABLE FOR HIRE
@@ -99,7 +99,7 @@ export default function AboutPage() {
                     </div>
 
                     {/* --- THE HOLOGRAPHIC ID CARD (VISUAL) --- */}
-                    <div className="relative w-full h-[500px] flex items-center justify-center perspective-1000">
+                    <div className="relative w-full h-125 flex items-center justify-center perspective-1000">
                         {/* Decorative Circles behind */}
                         <div className={`absolute w-96 h-96 ${BORDER_ACCENT} rounded-full border opacity-10 animate-[spin_10s_linear_infinite]`}></div>
                         <div className="absolute w-64 h-64 border border-white/5 rounded-full animate-[spin_15s_linear_infinite_reverse]"></div>
@@ -117,7 +117,7 @@ export default function AboutPage() {
                                     className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                                 />
                                 {/* Scanline Effect */}
-                                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0077b6]/20 to-transparent w-full h-full animate-scan"></div>
+                                <div className="absolute inset-0 bg-linear-to-b from-transparent via-[#0077b6]/20 to-transparent w-full h-full animate-scan"></div>
                             </div>
 
                             <div className="text-center z-10">
@@ -139,11 +139,11 @@ export default function AboutPage() {
                 <div className="w-full border-y border-white/10 py-10 mb-32 overflow-hidden bg-black/50">
                     <div className="flex justify-around items-center text-center">
                         <div>
-                            <span className="block text-4xl md:text-5xl font-bold text-white mb-2">02+</span>
+                            <span className="block text-4xl md:text-5xl font-bold text-white mb-2">01+</span>
                             <span className="text-xs font-mono text-gray-500 uppercase tracking-widest">Years Exp.</span>
                         </div>
                         <div>
-                            <span className="block text-4xl md:text-5xl font-bold text-white mb-2">15+</span>
+                            <span className="block text-4xl md:text-5xl font-bold text-white mb-2">5+</span>
                             <span className="text-xs font-mono text-gray-500 uppercase tracking-widest">Designs Validated</span>
                         </div>
                         <div>
@@ -162,7 +162,7 @@ export default function AboutPage() {
                         <div>
                             <div className="flex items-center gap-3 mb-10">
                                 <Settings className="text-[#0077b6]" />
-                                <h2 className="text-2xl font-light font-['Space_Grotesk'] uppercase tracking-wider">Technical Matrix</h2>
+                                <h2 className="text-2xl font-light font-['Space_Grotesk'] uppercase tracking-wider">Technical Skills</h2>
                             </div>
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -196,7 +196,7 @@ export default function AboutPage() {
                     <div className="lg:col-span-7">
                         <div className="flex items-center gap-3 mb-10">
                             <Briefcase className="text-[#0077b6]" />
-                            <h2 className="text-2xl font-light font-['Space_Grotesk'] uppercase tracking-wider">System Logs</h2>
+                            <h2 className="text-2xl font-light font-['Space_Grotesk'] uppercase tracking-wider">Experience</h2>
                         </div>
 
                         <div className="space-y-2">
