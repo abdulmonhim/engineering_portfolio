@@ -3,6 +3,9 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
+const ACCENT_COLOR_HEX = '#00f0ff';
+// const ACCENT_COLOR_HEX = 0x0077b6;
+
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -38,7 +41,7 @@ const Navbar = () => {
                         whileHover={{ scale: 1.05 }}
                         className="text-2xl font-bold tracking-tighter cursor-pointer"
                     >
-                        Abdul<span className="text-[#0077b6]">Monhim</span>
+                        Abdul<span  style={{color:ACCENT_COLOR_HEX}}>Monhim</span>
                     </motion.div>
 
                     {/* Desktop Links with Animated Underline */}
@@ -48,11 +51,11 @@ const Navbar = () => {
                                 <span className="block transition-transform duration-300 group-hover:-translate-y-full">
                                     {link.name}
                                 </span>
-                                <span className="absolute inset-0 block translate-y-full transition-transform duration-300 group-hover:translate-y-0 text-[#0077b6]">
+                                <span className="absolute inset-0 block translate-y-full transition-transform duration-300 group-hover:translate-y-0 " style={{color:ACCENT_COLOR_HEX}}>
                                     {link.name}
                                 </span>
                                 <motion.div 
-                                    className="absolute bottom-0 left-0 w-full h-px bg-[#0077b6] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
+                                    className="absolute bottom-0 left-0 w-full h-px  origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" style={{backgroundColor:ACCENT_COLOR_HEX}}
                                 />
                             </a>
                         ))}
@@ -84,7 +87,7 @@ const Navbar = () => {
                                     key={link.name} 
                                     href={link.href} 
                                     onClick={() => setIsOpen(false)}
-                                    className="text-3xl uppercase tracking-[0.3em] hover:text-[#0077b6] transition-colors"
+                                    className={`text-3xl uppercase tracking-[0.3em] hover:text-[${ACCENT_COLOR_HEX}] transition-colors`}
                                 >
                                     {link.name}
                                 </motion.a>
